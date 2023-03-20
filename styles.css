@@ -1,0 +1,63 @@
+.nav-center {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  margin: 0 auto;
+}
+.navbar-brand{
+  background: linear-gradient(to left, #009246 0%, #CE1126 100%);
+  border-radius: 10px;
+}
+.navbar {
+  background: #004225;
+} 
+
+.navbar-nav .primera-capa a{
+  background-color: #009246;
+}
+.navbar-nav .segunda-capa a{
+  background-color: #FFFFFF;
+}
+.navbar-nav .tercera-capa a{
+  background-color: #CE1126;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+.menu-item {
+  margin-bottom: 1rem;
+}
+
+body {
+  background-color: #1C1C1C !important;
+}
+
+.carta .img{
+text-align: center;
+}
+
+.menu-item img {
+  display: block;
+  margin: 0 auto;
+}
+.menu-item{
+  text-align: center;
+}
