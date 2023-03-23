@@ -22,9 +22,14 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">CONDE</a>
+            <!-- El código del canvas se encuentra en el archivo app.js -->
+            <a class="navbar-brand" href="#">
+                <canvas id="logo" width="150" height="50"
+                    style="display:inline-block; vertical-align: middle;"></canvas>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -39,7 +44,7 @@
                         <a class="nav-link" href="antipasto.html">Antipasto</a>
                     </li>
                     <li class="nav-item segunda-capa">
-                        <a class="nav-link" href="#">Pasta y Risotto</a>
+                        <a class="nav-link" href="PastaYRisotto.html">Pasta y Risotto</a>
                     </li>
                     <li class="nav-item tercera-capa">
                         <a class="nav-link" href="dolci.html">Dolci</a>
@@ -60,17 +65,34 @@
         <div class="menu-item">
             <h4>Risotto con Spaghetti</h4>
             <img src="img/risottoEspaguetti.JPG" width="800" alt="Risotto con Spaghetti">
-            <p class="descripcion">Descripción: Una deliciosa combinación de dos clásicos de la cocina italiana, el arroz risotto y la pasta spaghetti, que crea una textura única y satisfactoria. Este plato se prepara con un caldo de pollo o verduras, arroz, pasta y otros ingredientes como champiñones, tomates y queso parmesano. Es perfecto como plato principal o como guarnición para cualquier comida italiana.</p>
+            <p class="descripcion">Descripción: Una deliciosa combinación de dos clásicos de la cocina italiana, el
+                arroz risotto y la pasta spaghetti, que crea una textura única y satisfactoria. Este plato se prepara
+                con un caldo de pollo o verduras, arroz, pasta y otros ingredientes como champiñones, tomates y queso
+                parmesano. Es perfecto como plato principal o como guarnición para cualquier comida italiana.</p>
             <p class="precio">Precio: $18</p>
         </div>
         <br>
         <div class="menu-item">
             <h4>Risotto de pasta a la carbonara</h4>
-            <img src="img/risottoCarbonara.jpg" width="800" alt="Frico">
-            <p class="descripcion">Descipción: Un delicioso y cremoso plato de arroz risotto con una mezcla de pasta carbonara, que incluye huevos, tocino y queso parmesano. La textura suave y cremosa del risotto se combina perfectamente con la pasta carbonara para crear un plato lleno de sabor y satisfacción.</p>
+            <img src="img/risottoCarbonara.jpg" width="800" alt="risottoCarbonara">
+            <p class="descripcion">Descipción: Un delicioso y cremoso plato de arroz risotto con una mezcla de pasta
+                carbonara, que incluye huevos, tocino y queso parmesano. La textura suave y cremosa del risotto se
+                combina perfectamente con la pasta carbonara para crear un plato lleno de sabor y satisfacción.</p>
             <p class="precio">Precio: $20</p>
         </div>
+        <br>
+        <div class="menu-item">
+            <h4>Risotto ai funghi</h4>
+            <img src="img/risottoFunghi.png" width="800" alt="risottoFunghi">
+            <p class="descripcion">Descipción: Un cremoso risotto de arroz Arborio cocinado lentamente con caldo, vino blanco, 
+                cebolla, ajo y una mezcla de setas (como porcini, shiitake o champiñones). Se termina con mantequilla y queso parmesano rallado.</p>
+            <p class="precio">Precio: $15</p>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="appJq.js"></script>
+    <script src="app.js"></script>
 </body>
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-white text-muted">
@@ -84,21 +106,21 @@
         <div>
             <a href="" class="me-4 link-secondary">
                 <i class="fab fa-facebook-f"></i>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-github"></i>
-            </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
         </div>
         <!-- Right -->
     </section>
@@ -115,7 +137,12 @@
                         <i class="fas fa-gem me-3 text-secondary"></i>CONDE
                     </h6>
                     <p>
-                    En CONDE, nos enorgullecemos de ofrecer auténtica cocina italiana con una amplia selección de platos que te transportarán directamente a las calles de Italia. Desde la suculenta pasta y los risottos hasta las deliciosas pizzas y antipastos, cada bocado es una experiencia culinaria única y deliciosa. Además, nuestro ambiente acogedor y servicio amigable aseguran una experiencia completa y satisfactoria para nuestros comensales. Ven y descubre el sabor de Italia en CONDE.
+                        En CONDE, nos enorgullecemos de ofrecer auténtica cocina italiana con una amplia selección de
+                        platos que te transportarán directamente a las calles de Italia. Desde la suculenta pasta y los
+                        risottos hasta las deliciosas pizzas y antipastos, cada bocado es una experiencia culinaria
+                        única y deliciosa. Además, nuestro ambiente acogedor y servicio amigable aseguran una
+                        experiencia completa y satisfactoria para nuestros comensales. Ven y descubre el sabor de Italia
+                        en CONDE.
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -136,7 +163,7 @@
                     <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
                     <p>
                         <i class="fas fa-envelope me-3 text-secondary"></i>
-                        reservas@conderestaurante.com. 
+                        reservas@conderestaurante.com.
                     </p>
                     <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
                     <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>

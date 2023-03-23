@@ -24,7 +24,11 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">CONDE</a>
+            <!-- El código del canvas se encuentra en el archivo app.js -->
+            <a class="navbar-brand" href="#">
+                <canvas id="logo" width="150" height="50"
+                    style="display:inline-block; vertical-align: middle;"></canvas>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -42,7 +46,7 @@
                         <a class="nav-link" href="PastaYRisotto.html">Pasta y Risotto</a>
                     </li>
                     <li class="nav-item tercera-capa">
-                        <a class="nav-link" href="#">Dolci</a>
+                        <a class="nav-link" href="dolci.html">Dolci</a>
                     </li>
                     <li class="nav-item tercera-capa">
                         <a class="nav-link" href="#">Contacto</a>
@@ -59,19 +63,39 @@
     <div class="carta">
         <div class="menu-item">
             <h4>Pastiera</h4>
-            <img src="img/dolci.jpg" width="800" alt="Caponata">
-            <p class="descripcion">Descripción: Un postre típico de la región de Campania en Italia, hecho con una masa de pastel dulce y crujiente, relleno de ricotta, trigo cocido, azúcar y limón. Se hornea hasta que esté dorado y crujiente por fuera y suave y cremoso por dentro. Es un postre tradicional de la Semana Santa y se puede encontrar en muchos restaurantes italianos.</p>
+            <img src="img/pastiera.jpg" width="800" alt="pastiera">
+            <p class="descripcion">Descripción: Un postre típico de la región de Campania en Italia, hecho con una masa
+                de pastel dulce y crujiente, relleno de ricotta, trigo cocido, azúcar y limón. Se hornea hasta que esté
+                dorado y crujiente por fuera y suave y cremoso por dentro. Es un postre tradicional de la Semana Santa y
+                se puede encontrar en muchos restaurantes italianos.</p>
             <p class="precio">Precio: $8</p>
         </div>
         <br>
-        
+
         <div class="menu-item">
             <h4>Tiramisú</h4>
-            <img src="img/tiramisu.jpg" width="800" alt="Frico">
-            <p class="descripcion">Descipción: Un postre italiano clásico y decadente hecho con capas de bizcocho de soletilla empapado en café, crema de mascarpone y cacao en polvo. La textura suave y cremosa del mascarpone se mezcla con la esponjosidad del bizcocho y la amargura del café para crear un postre irresistible. Es un postre muy popular en los restaurantes italianos de todo el mundo.</p>
+            <img src="img/tiramisu.jpg" width="800" alt="tiramisu">
+            <p class="descripcion">Descipción: Un postre italiano clásico y decadente hecho con capas de bizcocho de
+                soletilla empapado en café, crema de mascarpone y cacao en polvo. La textura suave y cremosa del
+                mascarpone se mezcla con la esponjosidad del bizcocho y la amargura del café para crear un postre
+                irresistible. Es un postre muy popular en los restaurantes italianos de todo el mundo.</p>
             <p class="precio">Precio: $10</p>
         </div>
+
+        <div class="menu-item">
+            <h4>Panna cotta</h4>
+            <img src="img/panacota.png" width="800" alt="panacota">
+            <p class="descripcion">Descipción: Un postre suave y cremoso hecho de nata, azúcar y gelatina. Se suele servir frío y acompañado de frutas frescas o salsas de frutas.</p>
+            <p class="precio">Precio: $7</p>
+        </div>
     </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="appJq.js"></script>
+    <script src="app.js"></script>
+
+
 
 </body>
 <!-- Footer -->
@@ -86,21 +110,21 @@
         <div>
             <a href="" class="me-4 link-secondary">
                 <i class="fab fa-facebook-f"></i>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-github"></i>
-            </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
         </div>
         <!-- Right -->
     </section>
@@ -117,7 +141,12 @@
                         <i class="fas fa-gem me-3 text-secondary"></i>CONDE
                     </h6>
                     <p>
-                    En CONDE, nos enorgullecemos de ofrecer auténtica cocina italiana con una amplia selección de platos que te transportarán directamente a las calles de Italia. Desde la suculenta pasta y los risottos hasta las deliciosas pizzas y antipastos, cada bocado es una experiencia culinaria única y deliciosa. Además, nuestro ambiente acogedor y servicio amigable aseguran una experiencia completa y satisfactoria para nuestros comensales. Ven y descubre el sabor de Italia en CONDE.
+                        En CONDE, nos enorgullecemos de ofrecer auténtica cocina italiana con una amplia selección de
+                        platos que te transportarán directamente a las calles de Italia. Desde la suculenta pasta y los
+                        risottos hasta las deliciosas pizzas y antipastos, cada bocado es una experiencia culinaria
+                        única y deliciosa. Además, nuestro ambiente acogedor y servicio amigable aseguran una
+                        experiencia completa y satisfactoria para nuestros comensales. Ven y descubre el sabor de Italia
+                        en CONDE.
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -138,7 +167,7 @@
                     <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
                     <p>
                         <i class="fas fa-envelope me-3 text-secondary"></i>
-                        reservas@conderestaurante.com. 
+                        reservas@conderestaurante.com.
                     </p>
                     <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
                     <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>

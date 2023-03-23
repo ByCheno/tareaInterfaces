@@ -22,9 +22,14 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">CONDE</a>
+            <!-- El código del canvas se encuentra en el archivo app.js -->
+            <a class="navbar-brand" href="#">
+                <canvas id="logo" width="150" height="50"
+                    style="display:inline-block; vertical-align: middle;"></canvas>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,7 +41,7 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item primera-capa">
-                        <a class="nav-link" href="#">Antipasto</a>
+                        <a class="nav-link" href="antipasto.html">Antipasto</a>
                     </li>
                     <li class="nav-item segunda-capa">
                         <a class="nav-link" href="PastaYRisotto.html">Pasta y Risotto</a>
@@ -56,21 +61,49 @@
         </div>
     </nav>
 
+
     <div class="carta">
         <div class="menu-item">
             <h4>Caponata</h4>
             <img src="img/caponata.jpg" width="800" alt="Caponata">
-            <p class="descripcion">Descipción: Ensalada de verduras de la región italiana de Sicilia. Está hecha con berenjena, apio, cebolla, tomate, alcaparras y aceitunas, todo cocido en un aderezo agridulce de vinagre y azúcar. A menudo se sirve frío como aperitivo o como guarnición para platos de carne o pescado.</p>
+            <p class="descripcion">Descipción: Ensalada de verduras de la región italiana de Sicilia. Está hecha con
+                berenjena, apio, cebolla, tomate, alcaparras y aceitunas, todo cocido en un aderezo agridulce de vinagre
+                y azúcar. A menudo se sirve frío como aperitivo o como guarnición para platos de carne o pescado.</p>
             <p class="precio">Precio: $12</p>
         </div>
         <br>
         <div class="menu-item">
             <h4>Frico</h4>
             <img src="img/frico.jpg" width="800" alt="Frico">
-            <p class="descripcion">Descipción: Plato típico de la región italiana de Friuli-Venezia Giulia. Es una especie de tortilla o panqueque hecho con queso Montasio rallado, patatas, cebolla y ajo. El queso se derrite y se mezcla con las patatas y la cebolla para crear una textura suave y cremosa. A menudo se sirve como plato principal o como aperitivo caliente.</p>
+            <p class="descripcion">Descipción: Plato típico de la región italiana de Friuli-Venezia Giulia. Es una
+                especie de tortilla o panqueque hecho con queso Montasio rallado, patatas, cebolla y ajo. El queso se
+                derrite y se mezcla con las patatas y la cebolla para crear una textura suave y cremosa. A menudo se
+                sirve como plato principal o como aperitivo caliente.</p>
             <p class="precio">Precio: $10</p>
         </div>
+        <br>
+        <div class="menu-item">
+            <h4>Bruschetta</h4>
+            <img src="img/brucheta.jpg" width="800" alt="Bruschetta">
+            <p class="descripcion">Descipción: Pan tostado cubierto con tomates frescos picados, ajo, albahaca, aceite
+                de oliva y,
+                a veces, queso. Es un aperitivo sencillo y delicioso que es muy popular en Italia.</p>
+            <p class="precio">Precio: $5</p>
+        </div>
+        <br>
+        <div class="menu-item">
+            <h4>Prosciutto e melone</h4>
+            <img src="img/jamonMelon.jpg" width="800" alt="jamonMelon">
+            <p class="descripcion">Descipción: Rodajas finas de jamón curado (prosciutto) servidas con trozos de melón dulce y jugoso. 
+                Es una combinación clásica de sabores dulces y salados.</p>
+            <p class="precio">Precio: $7</p>
+        </div>
+
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="appJq.js"></script>
+    <script src="app.js"></script>
 
 </body>
 <!-- Footer -->
@@ -85,21 +118,21 @@
         <div>
             <a href="" class="me-4 link-secondary">
                 <i class="fab fa-facebook-f"></i>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="" class="me-4 link-secondary">
-                <i class="fab fa-github"></i>
-            </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="fab fa-github"></i>
+                </a>
         </div>
         <!-- Right -->
     </section>
@@ -116,7 +149,12 @@
                         <i class="fas fa-gem me-3 text-secondary"></i>CONDE
                     </h6>
                     <p>
-                    En CONDE, nos enorgullecemos de ofrecer auténtica cocina italiana con una amplia selección de platos que te transportarán directamente a las calles de Italia. Desde la suculenta pasta y los risottos hasta las deliciosas pizzas y antipastos, cada bocado es una experiencia culinaria única y deliciosa. Además, nuestro ambiente acogedor y servicio amigable aseguran una experiencia completa y satisfactoria para nuestros comensales. Ven y descubre el sabor de Italia en CONDE.
+                        En CONDE, nos enorgullecemos de ofrecer auténtica cocina italiana con una amplia selección de
+                        platos que te transportarán directamente a las calles de Italia. Desde la suculenta pasta y los
+                        risottos hasta las deliciosas pizzas y antipastos, cada bocado es una experiencia culinaria
+                        única y deliciosa. Además, nuestro ambiente acogedor y servicio amigable aseguran una
+                        experiencia completa y satisfactoria para nuestros comensales. Ven y descubre el sabor de Italia
+                        en CONDE.
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -137,7 +175,7 @@
                     <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
                     <p>
                         <i class="fas fa-envelope me-3 text-secondary"></i>
-                        reservas@conderestaurante.com. 
+                        reservas@conderestaurante.com.
                     </p>
                     <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
                     <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
