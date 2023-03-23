@@ -14,12 +14,21 @@
 
 .navbar-nav .primera-capa a{
   background-color: #009246;
+  display: flex;
+  align-items: center;
+  height: 60px;
 }
 .navbar-nav .segunda-capa a{
   background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: 60px;
 }
 .navbar-nav .tercera-capa a{
   background-color: #CE1126;
+  display: flex;
+  align-items: center;
+  height: 60px;
 }
 
 h1,
